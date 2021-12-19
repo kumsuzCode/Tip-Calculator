@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <header>My Tip Calculator</header>
+  </div>
+
+  <div class="big-container">
+
+    <div class = "container">
+
+      <div class="user-inputs">
+        
+        <!-- User Input for Bill -->
+        <div class="bill-input">
+          <label>Bill</label>
+          <input type="number">
+        </div>
+  
+        <!-- User Selection of tip amount -->
+        <div class="tip-selection">
+          <div class="label">Select Tip %</div>
+
+          <div class="selection-container">
+
+
+            <div class="row1">
+              <div class="tip-amt set-tip" id = "5%">5%</div>
+              <div class="tip-amt set-tip" id = "10%">10%</div>
+              <div class="tip-amt set-tip" id = "15%">15%</div>
+            </div>
+  
+            <div class="row2">
+              <div class="tip-amt set-tip" id = "25%">25%</div>
+              <div class="tip-amt set-tip" id = "50%">50%</div>
+    
+              <div class="tip-amt" id = "custom">
+                <input type="number" placeholder="Custom" style = "text-align: center;">
+              </div>
+            </div>
+  
+
+          </div>
+          
+
+        </div>
+  
+        <!-- User input of the number of people -->
+        <div class="num-people-input">
+          <label>Number of People</label>
+          <input type="number">
+        </div>
+  
+      </div>
+  
+      <div class="calc-output">
+
+        <div class="calcs">
+
+          <div class="tip-calculation">
+            <div class="label">Tip Amount</div>
+            <div class="dollars">
+              $0.00
+              <!-- need to alter the value of this using JS -->
+            </div>
+          </div>
+          
+          <div class="total-calculation">
+            <!-- copypast the above format into this div -->
+          </div>
+
+        </div>
+   
+        
+        <button type="reset">RESET</button>
+
+      </div>
+  
+    </div>
+
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+<!--
+
+    Select Tip %
+    5%
+    10%
+    15%
+    25%
+    50%
+    Custom
+
+    Number of People
+
+    Tip Amount
+    / person
+
+    Total
+    / person
+
+    Reset
+
+-->

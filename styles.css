@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@300&family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    padding-top: 3em;
+    color: hsl(186, 14%, 43%);
+    font-size: 40px;
+}
+
+input {
+    text-align: right;
+}
+
+.big-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 60vw;
+    height: 55vh;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-inputs, .calc-output {
+    /*border: blue solid 2px;*/
+    width: 550px;
+    margin: 1.5em;
+}
+
+/*=============
+    Left Side
+===============*/
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bill-input {
+    height: 100px;
+    margin-bottom: 15px;    
+}
+
+.bill-input label, .num-people-input label, .tip-selection .label {
+    display: block;
+    color: hsl(185, 52%, 14%);
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-left: 2em;
+}
+
+.bill-input input, .num-people-input input  {
+    border: 0;
+    padding: 15px;
+    margin: 0 1em;
+    font-size: 24px;
+    width: 500px;
+    background-color: hsl(180, 52%, 92%);
+    border-radius: 10px;
+}
+
+.bill-input input:focus, .num-people-input input:focus {
+    outline: none !important;
+    border:2px solid cyan;
+}
+
+.num-people-input {
+    margin-bottom: 30px;
+}
+
+.tip-selection {
+    height: 12rem;
+}
+
+.tip-selection .label {
+    margin-bottom: -10px;
+}
+
+.row1, .row2{
+    display:flex;
+    justify-content: space-between;
+}
+
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.tip-amt {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(186, 49%, 92%);
+    font-size: 24px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.set-tip:hover {
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
+
+}
+
+#custom {
+    background-color: hsl(180, 52%, 92%);
+}
+
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: hsl(183, 100%, 15%);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
+  }
+
+.tip-amt input {
+    width:100%;
+    font-size: 24px;
+    padding: 5px;
+
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.tip-amt input:focus{
+    outline:none;
+}
+
+.tip-amt input::-webkit-outer-spin-button,
+.tip-amt input::-webkit-inner-spin-button,
+.bill-input input::-webkit-outer-spin-button,
+.bill-input input::-webkit-inner-spin-button,
+.num-people-input input::-webkit-outer-spin-button,
+.num-people-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.num-people-input {
+    margin-top: -20px;
+}
+
+
+
+
+/*=============
+    Right Side
+===============*/
+
+.calc-output {
+    background-color: hsl(183, 100%, 15%) ;
+    border-radius: 15px;
+}
+
+/*
+
+WHERE TO GO FROM HERE
+
+    take out the top padding from the number of people thing.
+    to help with this put borders around all elements.
