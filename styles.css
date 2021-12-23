@@ -83,11 +83,21 @@ input {
     width: 500px;
     background-color: hsl(180, 52%, 92%);
     border-radius: 10px;
+
+    color: rgb(0, 73, 77);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-weight: bolder;
 }
 
 .bill-input input:focus, .num-people-input input:focus {
     outline: none !important;
     border:2px solid cyan;
+}
+
+.red-error-border {
+    border: 2px solid red;
 }
 
 .num-people-input {
@@ -131,7 +141,11 @@ input {
 .set-tip:hover {
     color: hsl(183, 100%, 15%);
     background-color:hsl(172, 67%, 45%);
+}
 
+.tip-selected {
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
 }
 
 #custom {
@@ -141,16 +155,23 @@ input {
 
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: hsl(183, 100%, 15%);
+    color: rgba(0, 73, 77, 0.7);
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Space Mono', monospace;
+    font-weight: bolder;
   }
 
 .tip-amt input {
     width:100%;
     font-size: 24px;
     padding: 5px;
+
+    color: rgb(0, 73, 77);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-weight: bolder;
 
     border:none;
     background-image:none;
@@ -249,9 +270,3 @@ input {
     color: hsl(183, 100%, 15%);
 }
 
-/*
-
-WHERE TO GO FROM HERE
-
-    take out the top padding from the number of people thing.
-    to help with this put borders around all elements.
