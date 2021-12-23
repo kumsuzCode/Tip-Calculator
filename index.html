@@ -6,9 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Tip calculator App</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -28,7 +27,7 @@
         <!-- User Input for Bill -->
         <div class="bill-input">
           <label>Bill</label>
-          <input type="number">
+          <input type="number" placeholder="0" id = "bill-input">
         </div>
   
         <!-- User Selection of tip amount -->
@@ -40,14 +39,14 @@
 
 
             <div class="row1">
-              <div class="tip-amt set-tip" id = "5%">5%</div>
-              <div class="tip-amt set-tip" id = "10%">10%</div>
-              <div class="tip-amt set-tip" id = "15%">15%</div>
+              <div class="tip-amt set-tip" id = "tip5">5%</div>
+              <div class="tip-amt set-tip" id = "tip10">10%</div>
+              <div class="tip-amt set-tip" id = "tip15">15%</div>
             </div>
   
             <div class="row2">
-              <div class="tip-amt set-tip" id = "25%">25%</div>
-              <div class="tip-amt set-tip" id = "50%">50%</div>
+              <div class="tip-amt set-tip" id = "tip25">25%</div>
+              <div class="tip-amt set-tip" id = "tip50">50%</div>
     
               <div class="tip-amt" id = "custom">
                 <input type="number" placeholder="Custom" style = "text-align: center;">
@@ -62,7 +61,7 @@
         <!-- User input of the number of people -->
         <div class="num-people-input">
           <label>Number of People</label>
-          <input type="number">
+          <input class = "red-error-border" type="number" placeholder="0" id = "num-people-input">
         </div>
   
       </div>
@@ -81,7 +80,7 @@
               <div class="per-person">/ person</div>
             </div>
             
-            <div class="dollars">
+            <div class="dollars" id = "tip-amt">
               $0.00
               <!-- need to alter the value of this using JS -->
             </div>
@@ -95,7 +94,7 @@
               <div class="per-person">/ person</div>
             </div>
             
-            <div class="dollars">
+            <div class="dollars" id = "total-amt">
               $0.00
               <!-- need to alter the value of this using JS -->
             </div>
