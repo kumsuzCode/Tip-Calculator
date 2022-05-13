@@ -32,7 +32,7 @@ function calc(tipPercentage) {
         numPeopleInput.style.border = "none";
 
         const tipCalculation = (tipPercentage*bill) / numPeople;
-        const totalCalculation = ((1+tipPercentage)*bill) / numPeople;
+        const totalCalculation = tipCalculation * numPeople;
 
         tipAmount.innerText = `$${tipCalculation.toFixed(2)}`;
         totalAmount.innerText = `$${totalCalculation.toFixed(2)}`;
