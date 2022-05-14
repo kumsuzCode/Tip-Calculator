@@ -75,7 +75,7 @@ input {
     margin-left: 2em;
 }
 
-.bill-input input, .num-people-input input  {
+.bill-input input, .num-people-input input{
     border: 0;
     padding: 15px;
     margin: 0 1em;
@@ -96,9 +96,6 @@ input {
     border:2px solid cyan;
 }
 
-.red-error-border {
-    border: 2px solid red;
-}
 
 .num-people-input {
     margin-bottom: 30px;
@@ -246,7 +243,7 @@ input {
     align-items: flex-end;
 }
 
-.reset{
+#reset-btn {
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Space Mono', monospace;
@@ -256,13 +253,19 @@ input {
     font-size: 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
+    transition: 0.5s;
+}
+
+#reset-btn:hover {
+    background-color: hsl(172, 40%, 45%);
 }
 
 .sleep {
     background-color: hsl(175, 95%, 24%);
-    color: rgba(5, 27, 29, 0.2)
-
-
+    color: rgba(5, 27, 29, 0.2);
 }
 
 .awake {
